@@ -55,3 +55,35 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+@media screen and (max-width: 768px) {
+  header, section {
+    padding: 15px;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+  th {
+    background: #005b8f;
+    color: #fff;
+  }
+  tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  td {
+    text-align: left;
+    padding-left: 40%;
+    position: relative;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+}
+input[type="email"] {
+  max-width: 400px;
+}

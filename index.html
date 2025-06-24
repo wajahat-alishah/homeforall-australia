@@ -96,9 +96,24 @@
     <h2>Book a Free Strategy Call</h2>
     <p>Discuss eligibility, developer offers, and visa pathways in a 1-on-1 call.</p>
     <iframe src="https://calendly.com/wajahat-shah/15min" width="100%" height="600" frameborder="0"></iframe>
+  
+  <section>
+    <h2>Book Your Strategy Call Instantly</h2>
+    <div style="position:relative;min-height:700px;">
+      <iframe src="https://calendly.com/wajahat-shah/15min?hide_event_type_details=1&hide_gdpr_banner=1" 
+              style="width:100%;height:700px;border:none;" loading="lazy"></iframe>
+    </div>
   </section>
 
-  <section id="contact">
+  <section>
+    <h2>Stay Informed</h2>
+    <p>Get the latest UAE property deals, government updates, and visa changes in your inbox.</p>
+    <form action="https://formsubmit.co/wajahat.shah@outlook.com" method="POST">
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
     <h2>Register Your Interest</h2>
     <form action="https://formsubmit.co/wajahat.shah@outlook.com" method="POST">
       <input type="text" name="name" placeholder="Your Full Name" required />
@@ -126,5 +141,24 @@
   <footer>
     <p>&copy; 2025 Home For All | In partnership with UAE-licensed developers. RERA License #123456. All rights reserved.</p>
   </footer>
+
+<!-- WhatsApp Chat Widget -->
+<script>
+  (function () {
+    var options = {
+      whatsapp: "+971500000000",
+      position: "right",
+      call_to_action: "Chat with us",
+      button_color: "#0099cc",
+      pre_filled_message: "Hi, I’m interested in UAE property.",
+      z_index: 999999,
+    };
+    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
 </body>
+
 </html>
